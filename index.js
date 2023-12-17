@@ -3,6 +3,8 @@ const express = require('express');
 const { createServer } = require('node:http');
 const { join } = require('node:path');
 
+const PORT = 3000;
+
 // create express app
 const app = express();
 // create http server using express app
@@ -14,6 +16,6 @@ app.get('/', (req, res) => {
 });
 
 // start server on port 3000
-server.listen(3000, () => {
+server.listen(PORT, () => {
   console.log('server running at http://localhost:3000');
 });
