@@ -1,12 +1,14 @@
 // import express and create http server
 const express = require('express');
 const { createServer } = require('node:http');
+// import path module
 const { join } = require('node:path');
 
 const PORT = 3000;
 
 // create express app
 const app = express();
+
 // create http server using express app
 const server = createServer(app);
 
