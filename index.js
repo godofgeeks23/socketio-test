@@ -1,7 +1,5 @@
-// import express and create http server
 const express = require('express');
 const { createServer } = require('node:http');
-// import path module
 const { join } = require('node:path');
 
 // port number on which server will run
