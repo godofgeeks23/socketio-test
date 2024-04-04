@@ -11,7 +11,7 @@ const app = express();
 // create http server using express app
 const server = createServer(app);
 
-// serve static files from the public directory
+// api endpoint to serve static files from the public directory
 app.get('/', (req, res) => {
   res.sendFile(join(__dirname, 'index.html'));
 });
